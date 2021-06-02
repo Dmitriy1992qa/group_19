@@ -1,0 +1,60 @@
+Homework №1 by Дима_С
+1) Посмотреть где я - 
+	pwd
+2) Создать папку - 
+	mkdir new
+3) Зайти в папку - 
+	cd new
+4) Создать 3 папки - 
+	mkdir new1 new2 new3
+5) Зайти в любоую папку - 
+	cd new1
+6) Создать 5 файлов (3 txt, 2 json) - 
+	touch 1.txt 2.txt 3.txt 4.json 5.json
+7) Создать 3 папки - 
+	mkdir new4 new5 new6
+8. Вывести список содержимого папки - 
+	ls -la
+9) + Открыть любой txt файл - 
+	nano 1.txt
+10) + написать туда что-нибудь, любой текст. - 
+	1234
+11) + сохранить и выйти. - 
+	ctrl+x, button "Y", button "Enter"
+12) Выйти из папки на уровень выше - 
+	cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - 
+	mv 1.txt 2.txt new4/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - 
+	cp 3.txt 4. json new5/
+15) Найти файл по имени - 
+	find / -name qwerty 
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - 
+	ls|grep '5' 3.txt or grep [null] pattern 3.txt
+17) вывести несколько первых строк из текстового файла - 
+	head -n3 3.txt 
+18) вывести несколько последних строк из текстового файла - 
+	tail -n2 3.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - 
+	less -c 3.txt
+20) вывести дату и время - 
+	date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions - 
+	curl -i https://api.quarantine.country/api/v1/regions
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13	
+	#!/bin/bash
+	mkdir qwerty #2
+	cd qwerty #3
+	mkdir qwerty2 qwerty3 qwerty4 #4
+	cd qwerty2 #5
+	touch 1.txt 2.txt 3.txt 4.json 5.json #6
+	mkdir qwerty5 qwerty6 qwerty7 #7
+	ls -la #8
+	mv 1.txt 4.json qwerty7 #13
+
+
